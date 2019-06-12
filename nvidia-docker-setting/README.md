@@ -83,6 +83,17 @@ $ sudo sh cuda_10.1...run
    97  sudo service docker restart
    98  docker run --rm nvidia/cuda:9.0-base nvidia-smi
 
+## Usage Docker with GPU
+
+  100  docker pull pytorch/pytorch:1.1.0-cuda10.0-cudnn7.5-devel
+  101  docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-py3-jupyter
+  102  docker run -it --rm -v $(realpath ~/notebooks):/tf/notebooks -p 8888:8888 tensorflow/tensorflow:latest-gpu-py3-jupyter
+
+
+## Pycharm
+
+### Install Pycharm
+
 ## Readings
 
 * Manual
