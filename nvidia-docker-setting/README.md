@@ -57,8 +57,8 @@ $ sudo sh cuda_10.1...run
   1. nano /etc/modprobe.d/blacklist-nouveau.conf
   2. with the following contents:
     ```
-    $ blacklist nouveau
-    $ options nouveau modeset=0
+    blacklist nouveau
+    options nouveau modeset=0
     ```
   3. Regenerate the kernel initramfs:
     ```
@@ -66,7 +66,7 @@ $ sudo sh cuda_10.1...run
     ```
   4. and finally: reboot
     ```
-    sudo reboot
+    $ sudo reboot
     ```
   * Refer: <https://askubuntu.com/questions/841876/how-to-disable-nouveau-kernel-driver>
 
