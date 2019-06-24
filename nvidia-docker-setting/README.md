@@ -42,13 +42,27 @@ $ sudo sh cuda_10.1...run
 
 * You appear to be running an X server
   1. Hit Ctrl+Alt+F1 and login using your credentials.
-  2. kill your current X server session by typing sudo service lightdm stop or sudo lightdm stop
-  3. Enter runlevel 3 by typing sudo init 3
+  2. kill your current X server session by typing 
+    ```
+    $ sudo service lightdm stop
+    or 
+    $ sudo lightdm stop
+    ```
+  3. Enter runlevel 3 by typing 
+    ```
+    $ sudo init 3
+    ```
   4. Install your *.run file.
     1. you change to the directory where you have downloaded the file by typing for instance cd Downloads. If it is in another directory, go there. Check if you see the file when you type ls NVIDIA*
     2. Make the file executable with chmod +x ./your-nvidia-file.run
     3. Execute the file with sudo ./your-nvidia-file.run
-  5. You might be required to reboot when the installation finishes. If not, run sudo service lightdm start or sudo start lightdm to start your X server again.
+  5. You might be required to reboot when the installation finishes. If not, 
+    ```
+    $ run sudo service lightdm start
+    or 
+    $ sudo start lightdm 
+    ```
+  to start your X server again.
   6. It's worth mentioning, that when installed this way, you'd have to redo the steps after each kernel update.
   * If you want to return X server. Hit Ctrl+Alt+F7
   * Refer: <https://askubuntu.com/questions/149206/how-to-install-nvidia-run>
