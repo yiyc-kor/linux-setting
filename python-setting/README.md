@@ -20,4 +20,8 @@ Insatll virtualevn
 pip3.5 install virtualenv
 ```
 
-
+Make venv and activate
+```
+virtualenv -p python3.5 venv/
+source venv/bin/activate
+```
